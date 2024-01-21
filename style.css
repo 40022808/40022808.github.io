@@ -7,11 +7,12 @@ body{
 
 
 div {
-    display: flex;
     justify-content: center;
-    text-align: center;
 }
 
+h1 {
+    margin: 0px;
+}
 
 p {
     margin: 0px;
