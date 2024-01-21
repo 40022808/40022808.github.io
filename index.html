@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>整蛊</title>
+    <title>魔王创世纪</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <h1 class="egy">v</h1>
-        <h1 class="ketto">yhz</h1>
-        <h1 class="halom">50</h1>
-        <h1 class="negy">!!</h1>
+        <h1>拥有的金币:</h1>
+        <h1><p id="number">0</p></h1>
     </div>
+    
+
+    <button onclick="increment()">赚钱</button>
+
+    
+
+    <script>
+    var count = 0;
+    function increment() {
+    count++;
+    document.getElementById("number").innerHTML = count;
+    }
+    </script>
+
+
 
 
 
