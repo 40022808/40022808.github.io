@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    background-image: radial-gradient(rgb(216, 216, 216),rgb(150, 150, 150));
+}
+
+
+.container {
+    background-image: linear-gradient(to right, black, rgb(91, 31, 126));
+
+    height: 70px;
+}
+
+h1.h1 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    margin-top: 0;
+    line-height: 10px;
+    background-image: url("素材库/123.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 70px;
+    text-indent: -99999px;
+}
+
+
+
+
+
+.egy {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+
+.keto, .halom {
+    padding: 10px;
+    border-width: 5px;
+    border-style:solid;
+    border-color: aqua;
+    box-shadow: 15px 15px 15px black;
+    background-color: rgba(0, 255, 255, 0.171);
+    height: 500px;
+    width: 500px;
+}
+
+.halom {
+    border-color: rgb(5, 31, 53);
+    background-image: url("素材库/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+@media screen and (max-width: 1230px) {
+    .keto, .halom {
+        padding: 3px;
+        border-width: 5px;
+        border-style:solid;
+        border-color: aqua;
+        box-shadow: 10px 10px 10px black;
+        background-color: rgba(0, 255, 255, 0.171);
+        width: 70%;
+        
+        
+    }
+
+    .halom {
+        margin-top: 10%;
+    }
+
+    .egy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+
+.button1 {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.halom2 {
+    background-color: white;
+    color: black;
+}
+
+.halom3 {
+    color: black;
+    background-color: darkkhaki;
+    width: 30%;
+}
+
+
+
+.negy2 {
+    color: black;
+    background-color: darkkhaki;
+    width: 30%;
+}
+
+.ot2 {
+    color: black;
+    background-color: darkkhaki;
+    width: 30%;
+}
+
+.ot {
+    background-color: white;
+    height: 30%;
+    width: 50%;
+    border-width: 1px;
+    border-style:solid;
+    border-color: black;
+}
