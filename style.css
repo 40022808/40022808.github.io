@@ -56,31 +56,6 @@ h1.h1 {
 }
 
 
-@media screen and (max-width: 1230px) {
-    .keto, .halom {
-        padding: 3px;
-        border-width: 5px;
-        border-style:solid;
-        border-color: aqua;
-        box-shadow: 10px 10px 10px black;
-        background-color: rgba(0, 255, 255, 0.171);
-        width: 70%;
-        
-        
-    }
-
-    .halom {
-        margin-top: 10%;
-    }
-
-    .egy {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-}
 
 
 .button1 {
@@ -120,4 +95,37 @@ h1.h1 {
     border-width: 1px;
     border-style:solid;
     border-color: black;
+}
+
+
+@media screen and (max-width: 1230px) {
+    .keto, .halom {
+        padding: 3px;
+        border-width: 5px;
+        border-style:solid;
+        border-color: aqua;
+        box-shadow: 10px 10px 10px black;
+        background-color: rgba(0, 255, 255, 0.171);
+        width: 70%;
+        
+        
+    }
+
+    .halom {
+        margin-top: 10%;
+    }
+
+    .egy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .halom3{
+        color: black;
+        background-color: darkkhaki;
+        width: 45%;
+    }
+
+
+
 }
