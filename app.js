@@ -37,11 +37,11 @@ button.addEventListener("click", () => {
             console.log("a1")
             abc = "a1"; // 更新 abc 的值
         }
-        else if (set == "释放A药剂") {
+        else if (set == "释放A气体") {
             console.log("a2")
             abc = "a2"; // 更新 abc 的值
         }
-        else if (set == "释放B药剂"){
+        else if (set == "释放B气体"){
             console.log("a3")
             abc = "a3"; // 更新 abc 的值
         }
