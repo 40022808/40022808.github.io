@@ -1,14 +1,58 @@
+//定义变量
 const keto = document.getElementById("keto");
 const halom = document.getElementById("halom");
 const negy = document.getElementById("negy");
 const button = document.getElementById("button");
 const ot = document.getElementById("ot");
+const bgm = document.getElementById("bgm");
+const 按钮1 = document.getElementById("按钮1");
+
+
+alert("目前版本:0.0.15");
+
+const 开始按钮 = document.getElementById("开始按钮");
+
+开始按钮.addEventListener("click",()=> {
+    const hiddenContent = document.querySelector('.隐藏');
+    hiddenContent.style.display = 'block';
+    const hiddenbutton = document.querySelector(".开始按钮")
+    hiddenbutton.style.display = "none";
+})
 
 
 
 
 
-alert("目前版本:0.0.5");
+//背景音乐设置
+let bgmStarted = false;
+const startPlayBGM = () => {
+  if (bgmStarted) return;
+  bgmStarted = true;
+  bgm.play();
+  bgm.volume = 0.05 ;
+  document.body.removeEventListener('click', startPlayBGM);
+  window.removeEventListener('keydown', startPlayBGM);
+};
+document.body.addEventListener('click', startPlayBGM);
+window.addEventListener('keydown', startPlayBGM);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -18,6 +62,7 @@ var nev = "";
 
 
 button.addEventListener("click", () => {
+    按钮1.play();
     if (abc === "1") {
         nev = negy.value;
         ot.textContent = "你好" + nev + "!";
