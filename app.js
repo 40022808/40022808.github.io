@@ -40,7 +40,7 @@ const startPlayBGM = () => {
   if (bgmStarted) return;
   bgmStarted = true;
   bgm.play();
-  bgm.volume = 0.05 ;
+  bgm.volume = 0.1 ;
   document.body.removeEventListener('click', startPlayBGM);
   window.removeEventListener('keydown', startPlayBGM);
 };
