@@ -13,7 +13,7 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.36");
+alert("目前版本:0.01.37");
 // 将 abc 声明为全局变量
 var abc = "0";
 var nev = "";
