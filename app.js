@@ -13,7 +13,7 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.31");
+alert("目前版本:0.01.36");
 // 将 abc 声明为全局变量
 var abc = "0";
 var nev = "";
@@ -126,6 +126,10 @@ button.addEventListener("click", () => {
             setTimeout(()=> alert("结局-1 [不要乱开门!]"), 13500 )
             setTimeout(()=> end.play() , 13500 )
             setTimeout(()=> end.volume = 0.8 , 13500 )
+            setTimeout(()=> {
+                    const hiddenbutton2 = document.querySelector("body")
+                    hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
+            }, 13500 )
         }
         else if (set == "释放A气体") {
             abc = "end-2"; // 更新 abc 的值
@@ -155,6 +159,10 @@ button.addEventListener("click", () => {
             setTimeout(()=> alert("结局-2 [嗯?这气体怎么还是草莓味的?!]"), 8000 )
             setTimeout(()=> end.play() , 8000 )
             setTimeout(()=> end.volume = 0.8 , 8000 )
+            setTimeout(()=> {
+                const hiddenbutton2 = document.querySelector("body")
+                hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
+            }, 8000 )
         }
         else if (set == "释放B气体"){
             abc = "3"; // 更新 abc 的值
@@ -226,6 +234,10 @@ button.addEventListener("click", () => {
             setTimeout(()=> alert("结局-2 [嗯?这气体怎么还是草莓味的?!]"), 8000 )
             setTimeout(()=> end.play() , 8000 )
             setTimeout(()=> end.volume = 0.8 , 8000 )
+            setTimeout(()=> {
+                const hiddenbutton2 = document.querySelector("body")
+                hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
+            }, 8000 )
         }
 
         else if (set == "释放B气体") {
