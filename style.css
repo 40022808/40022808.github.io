@@ -110,7 +110,7 @@ h1.h1 {
 }
 
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 828px) {
     .keto, .halom {
         padding: 3px;
         border-width: 5px;
@@ -118,19 +118,82 @@ h1.h1 {
         border-color: aqua;
         box-shadow: 10px 10px 10px black;
         background-color: rgba(0, 255, 255, 0.171);
-        width: 70%;
+        width: 60%;
         
         
     }
 
+    .keto {
+        height: auto;
+    }
+
+
     .halom {
-        margin-top: 10%;
+        margin-top: 5%;
+        background-size: cover;
+        height: 400px;
+
     }
 
     .egy {
         flex-direction: column;
         align-items: center;
+        margin-top: 5%;
+        font-size: 13px;
     }
+
+
+
+
+    .halom3{
+        color: black;
+        background-color: darkkhaki;
+        width: 45%;
+    }
+
+
+    .ot {
+        background-color: white;
+        height: 50%;
+        width: 70%;
+        border-width: 1px;
+        border-style:solid;
+        border-color: black;
+    }
+
+
+}
+
+@media screen and (min-width: 829px) and (max-width: 1224px) {
+    .keto, .halom {
+        padding: 3px;
+        border-width: 5px;
+        border-style:solid;
+        border-color: aqua;
+        box-shadow: 10px 10px 10px black;
+        background-color: rgba(0, 255, 255, 0.171);
+        width: 40%;
+        
+        
+    }
+
+    .keto {
+        height: auto;
+    }
+
+
+    .halom {
+        margin-top: 2%;
+        background-size: cover;
+    }
+
+    .egy {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+
 
     .halom3{
         color: black;
