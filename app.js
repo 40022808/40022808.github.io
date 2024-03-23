@@ -13,7 +13,7 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.28");
+alert("目前版本:0.01.31");
 // 将 abc 声明为全局变量
 var abc = "0";
 var nev = "";
@@ -26,6 +26,9 @@ const 开始按钮 = document.getElementById("开始按钮");
     const hiddenbutton = document.querySelector(".开始按钮")
     hiddenbutton.style.display = "none";
 })
+
+
+
 
 
 
@@ -74,11 +77,6 @@ setTimeout(()=> {showText(0)},3000)
 
 
 
-
-
-
-
-
 button.addEventListener("click", () => {
     按钮1.play();
     按钮1.volume = 0.5 ;
@@ -101,26 +99,56 @@ button.addEventListener("click", () => {
             abc = "end-1"; // 更新 abc 的值
             ot.textContent = "已解开门锁"
             开门.play();
-            setTimeout(() => keto.innerHTML = "你成功了", 800);
-            setTimeout(()=> keto.innerHTML += "，不过当你把门打开的时候，你看到了一群机器人。", 1500);
-            setTimeout(()=> keto.innerHTML += "它们胸前的扫描光束照到你了，紧接着它们开始朝着你开枪。", 3500);
-            setTimeout(()=> {机枪.play()}, 3500);
-            setTimeout(()=> {机枪.volume = 0.3 }, 3500);
-            setTimeout(()=> {机枪.volume = 0.1}, 5000);
-            setTimeout(()=> keto.innerHTML += "随着几声枪响，你感觉到疼痛而且意识也开始模糊了起来。", 5500);
-            setTimeout(()=> {机枪.pause()}, 6500);
-            setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 9000)
-            setTimeout(()=> {bgm.pause()}, 9000);
-            setTimeout(()=> alert("结局-1 [不要乱开门!]"), 11000 )
-            setTimeout(()=> end.play() , 11000 )
-            setTimeout(()=> end.volume = 0.8 , 11000 )
+            keto.textContent =""
+            let text2 = "你成功了，不过当你把门打开的时候，你看到了一群机器人。它们胸前的扫描光束照到你了，紧接着它们开始朝着你开枪。随着几声枪响，你感觉到疼痛而且意识也开始模糊了起来。"
+            function showText5(index) {
+                打字.play();
+                打字.volume = 0.2 ;
+                if (index < text2.length) {
+                    keto.innerHTML += text2[index];
+            
+                    setTimeout(() => {
+                        showText5(index + 1);
+                    }, 100); // 设置延迟时间（毫秒）
+                }
+                else {
+                    打字.pause()                  
+                    
+                }
+            }
+            showText5(0)
+            setTimeout(()=> {机枪.play()}, 5500);
+            setTimeout(()=> {机枪.volume = 0.3 }, 5500);
+            setTimeout(()=> {机枪.volume = 0.1}, 8000);
+            setTimeout(()=> {机枪.pause()}, 10000);
+            setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 11000)
+            setTimeout(()=> {bgm.pause()}, 11000);
+            setTimeout(()=> alert("结局-1 [不要乱开门!]"), 13500 )
+            setTimeout(()=> end.play() , 13500 )
+            setTimeout(()=> end.volume = 0.8 , 13500 )
         }
         else if (set == "释放A气体") {
             abc = "end-2"; // 更新 abc 的值
             ot.textContent = "已释放A气体"
             气体.play()
-            setTimeout(() => keto.innerHTML = "你听到了后面传来一声'滴'，你转头看去。", 800);
-            setTimeout(() => keto.innerHTML += "发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识", 2800);
+            keto.textContent =""
+            let text2 = "你听到了后面传来一声'滴'，你转头看去。发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识"
+            function showText5(index) {
+                打字.play();
+                打字.volume = 0.2 ;
+                if (index < text2.length) {
+                    keto.innerHTML += text2[index];
+            
+                    setTimeout(() => {
+                        showText5(index + 1);
+                    }, 100); // 设置延迟时间（毫秒）
+                }
+                else {
+                    打字.pause()                  
+                    
+                }
+            }
+            showText5(0)
             setTimeout(() => 气体.pause() , 6500);
             setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 6500)
             setTimeout(()=> {bgm.pause()}, 6500);
@@ -174,8 +202,24 @@ button.addEventListener("click", () => {
             abc = "end-2"; // 更新 abc 的值
             ot.textContent = "已释放A气体"
             气体.play()
-            setTimeout(() => keto.innerHTML = "你听到了后面传来一声'滴'，你转头看去。", 800);
-            setTimeout(() => keto.innerHTML += "发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识", 2800);
+            keto.textContent =""
+            let text2 = "你听到了后面传来一声'滴'，你转头看去。发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识"
+            function showText5(index) {
+                打字.play();
+                打字.volume = 0.2 ;
+                if (index < text2.length) {
+                    keto.innerHTML += text2[index];
+            
+                    setTimeout(() => {
+                        showText5(index + 1);
+                    }, 100); // 设置延迟时间（毫秒）
+                }
+                else {
+                    打字.pause()                  
+                    
+                }
+            }
+            showText5(0)
             setTimeout(() => 气体.pause() , 6500);
             setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 6500)
             setTimeout(()=> {bgm.pause()}, 6500);
