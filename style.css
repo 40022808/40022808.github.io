@@ -88,6 +88,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0.8;
+    position:relative ;
 }
 
 
@@ -125,12 +126,60 @@
 
 .ot {
     background-color: white;
-    height: 30%;
+    height: 40%;
     width: 50%;
     border-width: 1px;
     border-style:solid;
     border-color: black;
 }
+
+
+
+.切换 {
+    
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+
+.左1 , .右1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+}
+
+.左 {
+    background-image: url(素材库/箭头左.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.右 {
+    background-image: url(素材库/箭头右.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.左1 {
+    margin-left: 5px;
+    
+}
+
+
+
+.右1 {
+    margin-right: 5px;
+}
+
 
 
 @media screen and (max-width: 828px) {
@@ -154,7 +203,7 @@
     .halom {
         margin-top: 5%;
         background-size: cover;
-        height: 400px;
+        height: 500px;
 
     }
 
@@ -164,8 +213,6 @@
         margin-top: 5%;
         font-size: 13px;
     }
-
-
 
 
     .halom3{
@@ -195,6 +242,16 @@
         
     }
 
+
+    .切换 {
+        
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        margin-left: -3px;
+    }
 
 }
 
@@ -228,13 +285,22 @@
     }
 
 
-
     .halom3{
         color: black;
         background-color: darkkhaki;
         width: 45%;
     }
 
+
+    .切换 {
+        
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        margin-left: -3px;
+    }
 
 
 }

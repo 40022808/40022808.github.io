@@ -13,7 +13,37 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.41");
+alert("目前版本:0.01.45");
+
+
+
+
+
+let text1 = "你从一个昏暗的房间中醒来，你发现这是一个由某种金属构成的小房间，你的后面有一个小型通风口，前面有一道铁门上了锁，旁边的墙壁上镶嵌着显示器。突然显示器亮了起来。(右边或者下边是显示器，信息显示区是提示，输入区是输入选项做出选择的，输出区是给你选项和反馈)"
+
+// 逐字显示文本
+function showText(index) {
+    打字.play();
+    打字.volume = 0.5 ;
+    if (index < text1.length) {
+        keto.innerHTML += text1[index];
+
+        setTimeout(() => {
+            showText(index + 1);
+        }, 100); // 设置延迟时间（毫秒）
+    }
+    else {
+        打字.pause()
+        abc = "1";
+    }
+}
+
+
+
+
+
+
+
 // 将 abc 声明为全局变量
 var abc = "0";
 var nev = "";
@@ -29,6 +59,7 @@ const 开始按钮 = document.getElementById("开始按钮");
     hiddenbutton.style.display = "none";
     const hiddenbutton2 = document.querySelector(".开始按钮1")
     hiddenbutton2.style.display = "none";
+    setTimeout(()=> {showText(0)},2000)
 })
 
 
@@ -149,28 +180,6 @@ function end_2(){
 
 
 
-let text1 = "你从一个昏暗的房间中醒来，你发现这是一个由某种金属构成的小房间，你的后面有一个小型通风口，前面有一道铁门上了锁，旁边的墙壁上镶嵌着显示器。突然显示器亮了起来。(右边或者下边是显示器，信息显示区是提示，输入区是输入选项做出选择的，输出区是给你选项和反馈)"
-
-// 逐字显示文本
-function showText(index) {
-    打字.play();
-    打字.volume = 0.5 ;
-    if (index < text1.length) {
-        keto.innerHTML += text1[index];
-
-        setTimeout(() => {
-            showText(index + 1);
-        }, 100); // 设置延迟时间（毫秒）
-    }
-    else {
-        打字.pause()
-        abc = "1";
-    }
-}
-
-// 开始逐字显示
-
-setTimeout(()=> {showText(0)},3000)
 
 
 
