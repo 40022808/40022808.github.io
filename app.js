@@ -13,7 +13,7 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.45");
+alert("目前版本:0.01.46");
 
 
 
@@ -196,6 +196,8 @@ button.addEventListener("click", () => {
         }
         else {
             abc = "2"; // 更新 abc 的值
+            const 切换 = document.querySelector(".切换")
+            切换.style.display = 'flex';
             halom.textContent = "在输入区输入操作就可以执行了";
             ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:";
             setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 1000);
