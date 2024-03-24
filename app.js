@@ -13,7 +13,7 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.46");
+alert("目前版本:0.01.47");
 
 
 
