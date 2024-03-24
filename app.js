@@ -13,18 +13,22 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.37");
+alert("目前版本:0.01.39");
 // 将 abc 声明为全局变量
 var abc = "0";
 var nev = "";
 
 const 开始按钮 = document.getElementById("开始按钮");
 
+
+
 开始按钮.addEventListener("click",()=> {
     const hiddenContent = document.querySelector('.隐藏');
     hiddenContent.style.display = 'block';
     const hiddenbutton = document.querySelector(".开始按钮")
     hiddenbutton.style.display = "none";
+    const hiddenbutton2 = document.querySelector(".开始按钮1")
+    hiddenbutton2.style.display = "none";
 })
 
 
@@ -40,7 +44,7 @@ const startPlayBGM = () => {
   if (bgmStarted) return;
   bgmStarted = true;
   bgm.play();
-  bgm.volume = 0.1 ;
+  bgm.volume = 0.08 ;
   document.body.removeEventListener('click', startPlayBGM);
   window.removeEventListener('keydown', startPlayBGM);
 };
@@ -50,12 +54,12 @@ window.addEventListener('keydown', startPlayBGM);
 
 
 
-let text1 = "你从一个昏暗的房间中醒来，你发现这是一个由某种金属构成的小房间，你的后面有一个小型通风口，前面有一道铁门上了锁，旁边的墙壁上镶嵌着显示器。突然显示器亮了起来。(右边或者下边是显示器)"
+let text1 = "你从一个昏暗的房间中醒来，你发现这是一个由某种金属构成的小房间，你的后面有一个小型通风口，前面有一道铁门上了锁，旁边的墙壁上镶嵌着显示器。突然显示器亮了起来。(右边或者下边是显示器，信息显示区是提示，输入区是输入选项做出选择的，输出区是给你选项和反馈)"
 
 // 逐字显示文本
 function showText(index) {
     打字.play();
-    打字.volume = 0.6 ;
+    打字.volume = 0.5 ;
     if (index < text1.length) {
         keto.innerHTML += text1[index];
 
@@ -103,7 +107,7 @@ button.addEventListener("click", () => {
             let text2 = "你成功了，不过当你把门打开的时候，你看到了一群机器人。它们胸前的扫描光束照到你了，紧接着它们开始朝着你开枪。随着几声枪响，你感觉到疼痛而且意识也开始模糊了起来。"
             function showText5(index) {
                 打字.play();
-                打字.volume = 0.2 ;
+                打字.volume = 0.3 ;
                 if (index < text2.length) {
                     keto.innerHTML += text2[index];
             
@@ -123,11 +127,11 @@ button.addEventListener("click", () => {
             setTimeout(()=> {机枪.pause()}, 10000);
             setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 11000)
             setTimeout(()=> {bgm.pause()}, 11000);
-            setTimeout(()=> alert("结局-1 [不要乱开门!]"), 13500 )
-            setTimeout(()=> end.play() , 13500 )
-            setTimeout(()=> end.volume = 0.8 , 13500 )
+            setTimeout(()=> alert("结局-1 [不要乱开门!]"), 13000 )
+            setTimeout(()=> end.play() , 13000 )
+            setTimeout(()=> end.volume = 0.6 , 13000 )
             setTimeout(()=> {
-                    const hiddenbutton2 = document.querySelector("body")
+                    const hiddenbutton2 = document.querySelector(".隐藏")
                     hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
             }, 13500 )
         }
@@ -139,7 +143,7 @@ button.addEventListener("click", () => {
             let text2 = "你听到了后面传来一声'滴'，你转头看去。发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识"
             function showText5(index) {
                 打字.play();
-                打字.volume = 0.2 ;
+                打字.volume = 0.3 ;
                 if (index < text2.length) {
                     keto.innerHTML += text2[index];
             
@@ -158,9 +162,9 @@ button.addEventListener("click", () => {
             setTimeout(()=> {bgm.pause()}, 6500);
             setTimeout(()=> alert("结局-2 [嗯?这气体怎么还是草莓味的?!]"), 8000 )
             setTimeout(()=> end.play() , 8000 )
-            setTimeout(()=> end.volume = 0.8 , 8000 )
+            setTimeout(()=> end.volume = 0.6 , 8000 )
             setTimeout(()=> {
-                const hiddenbutton2 = document.querySelector("body")
+                const hiddenbutton2 = document.querySelector(".隐藏")
                 hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
             }, 8000 )
         }
@@ -173,7 +177,7 @@ button.addEventListener("click", () => {
             setTimeout(() => 气体.pause() , 5000);
             function showText2(index) {
                 打字.play();
-                打字.volume = 0.6 ;
+                打字.volume = 0.5 ;
                 if (index < text2.length) {
                     keto.innerHTML += text2[index];
             
@@ -214,7 +218,7 @@ button.addEventListener("click", () => {
             let text2 = "你听到了后面传来一声'滴'，你转头看去。发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识"
             function showText5(index) {
                 打字.play();
-                打字.volume = 0.2 ;
+                打字.volume = 0.5 ;
                 if (index < text2.length) {
                     keto.innerHTML += text2[index];
             
@@ -233,9 +237,9 @@ button.addEventListener("click", () => {
             setTimeout(()=> {bgm.pause()}, 6500);
             setTimeout(()=> alert("结局-2 [嗯?这气体怎么还是草莓味的?!]"), 8000 )
             setTimeout(()=> end.play() , 8000 )
-            setTimeout(()=> end.volume = 0.8 , 8000 )
+            setTimeout(()=> end.volume = 0.6 , 8000 )
             setTimeout(()=> {
-                const hiddenbutton2 = document.querySelector("body")
+                const hiddenbutton2 = document.querySelector(".隐藏")
                 hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
             }, 8000 )
         }
@@ -261,7 +265,7 @@ button.addEventListener("click", () => {
             let text = "你成功了,不过当你把门打开的时候，你看到了一群机器人。它们胸前的扫描光束照到你了，不过它们无视了你，并且你发现你身体表面上有一层B气体。应该是这个让机器人识别不了你，看着机器人身上的机枪你感觉到了庆幸。趁着气体还有用你准备离开这。"
             function showText3(index) {
                 打字.play();
-                打字.volume = 0.6 ;
+                打字.volume = 0.5 ;
                 if (index < text.length) {
                     keto.innerHTML += text[index];
             
@@ -279,7 +283,7 @@ button.addEventListener("click", () => {
             let text2 = "你从房间里走了出来，避开了机器人们来到了走廊。这个走廊没有一扇窗户，却充满了一道道紧闭的门。最后来到了一扇特别的门前。推开门你看到了...(to be continued!!!)";
             function showText4(index) {
                 打字.play();
-                打字.volume = 0.6 ;
+                打字.volume = 0.5 ;
                 if (index < text2.length) {
                     keto.innerHTML += text2[index];
             
@@ -291,7 +295,7 @@ button.addEventListener("click", () => {
                     打字.pause()
                     bgm.pause()
                     end.play()
-                    end.volume = 0.8       
+                    end.volume = 0.6       
                 }
             }
             

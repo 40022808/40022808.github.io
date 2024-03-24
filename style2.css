@@ -1,0 +1,19 @@
+.container {
+    background-image: linear-gradient(to right, black, rgb(91, 31, 126));
+
+    height: 70px;
+}
+
+h1.h1 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    margin-top: 0;
+    line-height: 10px;
+    background-image: url("素材库/123.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 70px;
+    text-indent: -99999px;
+}
