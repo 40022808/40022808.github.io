@@ -244,10 +244,8 @@
 
 
     .切换 {
-        
         position: absolute;
         bottom: 0;
-        display: flex;
         justify-content:space-between;
         width: 100%;
         margin-left: -3px;
@@ -296,7 +294,6 @@
         
         position: absolute;
         bottom: 0;
-        display: flex;
         justify-content:space-between;
         width: 100%;
         margin-left: -3px;

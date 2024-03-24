@@ -126,13 +126,13 @@ function end_1(){
             showText5(0)
             setTimeout(()=> {机枪.play()}, 5500);
             setTimeout(()=> {机枪.volume = 0.3 }, 5500);
-            setTimeout(()=> {机枪.volume = 0.1}, 8000);
-            setTimeout(()=> {机枪.pause()}, 10000);
-            setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 11000)
-            setTimeout(()=> {bgm.pause()}, 11000);
-            setTimeout(()=> alert("结局-1 [不要乱开门!]"), 13000 )
-            setTimeout(()=> end.play() , 13000 )
-            setTimeout(()=> end.volume = 0.6 , 13000 )
+            setTimeout(()=> {机枪.volume = 0.1}, 7000);
+            setTimeout(()=> {机枪.pause()}, 9000);
+            setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 10000)
+            setTimeout(()=> {bgm.pause()}, 10000);
+            setTimeout(()=> alert("结局-1 [不要乱开门!]"), 12000 )
+            setTimeout(()=> end.play() , 12000 )
+            setTimeout(()=> end.volume = 0.6 , 12000 )
             setTimeout(()=> {
                     const hiddenbutton2 = document.querySelector(".隐藏")
                     hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
