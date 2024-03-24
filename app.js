@@ -13,7 +13,7 @@ const end = document.getElementById("end");
 const 气体 = document.getElementById("气体");
 const 错误 = document.getElementById("错误");
 
-alert("目前版本:0.01.39");
+alert("目前版本:0.01.41");
 // 将 abc 声明为全局变量
 var abc = "0";
 var nev = "";
@@ -54,53 +54,25 @@ window.addEventListener('keydown', startPlayBGM);
 
 
 
-let text1 = "你从一个昏暗的房间中醒来，你发现这是一个由某种金属构成的小房间，你的后面有一个小型通风口，前面有一道铁门上了锁，旁边的墙壁上镶嵌着显示器。突然显示器亮了起来。(右边或者下边是显示器，信息显示区是提示，输入区是输入选项做出选择的，输出区是给你选项和反馈)"
 
-// 逐字显示文本
-function showText(index) {
-    打字.play();
-    打字.volume = 0.5 ;
-    if (index < text1.length) {
-        keto.innerHTML += text1[index];
 
-        setTimeout(() => {
-            showText(index + 1);
-        }, 100); // 设置延迟时间（毫秒）
-    }
-    else {
-        打字.pause()
-        abc = "1";
-    }
+//选项菜单
+function 选择1(){
+    setTimeout(()=> {ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:"},1500);
+    setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 2500);
+    setTimeout(() => {ot.innerHTML += "》释放A气体<br>"}, 3500);
+    setTimeout(() => ot.innerHTML += "》释放B气体<br>", 4500);
 }
 
-// 开始逐字显示
-
-setTimeout(()=> {showText(0)},3000)
 
 
 
 
 
-button.addEventListener("click", () => {
-    按钮1.play();
-    按钮1.volume = 0.5 ;
-    if (abc === "1") {
-        nev = negy.value;
-        negy.value = "";
-        abc = "2"; // 更新 abc 的值
-        halom.textContent = "在输入区输入操作就可以执行了";
-        ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:";
-        setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 1000);
-        setTimeout(() => {ot.innerHTML += "》释放A气体<br>"}, 2000);
-        setTimeout(() => ot.innerHTML += "》释放B气体<br>", 3000);
-        setTimeout(() => ot.innerHTML += "（在输入区输入操作就可以执行了）", 3500);
-        
-    } 
-    else if (abc === "2") {
-        let set = negy.value;
-        negy.value = "";
-        if (set == "解除铁门的电子锁"){
-            abc = "end-1"; // 更新 abc 的值
+
+//结局列表
+function end_1(){
+    abc = "end-1"; // 更新 abc 的值
             ot.textContent = "已解开门锁"
             开门.play();
             keto.textContent =""
@@ -134,9 +106,10 @@ button.addEventListener("click", () => {
                     const hiddenbutton2 = document.querySelector(".隐藏")
                     hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
             }, 13500 )
-        }
-        else if (set == "释放A气体") {
-            abc = "end-2"; // 更新 abc 的值
+}
+
+function end_2(){
+    abc = "end-2"; // 更新 abc 的值
             ot.textContent = "已释放A气体"
             气体.play()
             keto.textContent =""
@@ -167,6 +140,70 @@ button.addEventListener("click", () => {
                 const hiddenbutton2 = document.querySelector(".隐藏")
                 hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
             }, 8000 )
+}
+
+
+
+
+
+
+
+
+let text1 = "你从一个昏暗的房间中醒来，你发现这是一个由某种金属构成的小房间，你的后面有一个小型通风口，前面有一道铁门上了锁，旁边的墙壁上镶嵌着显示器。突然显示器亮了起来。(右边或者下边是显示器，信息显示区是提示，输入区是输入选项做出选择的，输出区是给你选项和反馈)"
+
+// 逐字显示文本
+function showText(index) {
+    打字.play();
+    打字.volume = 0.5 ;
+    if (index < text1.length) {
+        keto.innerHTML += text1[index];
+
+        setTimeout(() => {
+            showText(index + 1);
+        }, 100); // 设置延迟时间（毫秒）
+    }
+    else {
+        打字.pause()
+        abc = "1";
+    }
+}
+
+// 开始逐字显示
+
+setTimeout(()=> {showText(0)},3000)
+
+
+
+
+
+button.addEventListener("click", () => {
+    按钮1.play();
+    按钮1.volume = 0.5 ;
+    if (abc === "1") {
+        nev = negy.value;
+        negy.value = "";
+        if (nev == ""){
+            ot.innerHTML = "错误!<br>必须填写用户名!"
+        }
+        else {
+            abc = "2"; // 更新 abc 的值
+            halom.textContent = "在输入区输入操作就可以执行了";
+            ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:";
+            setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 1000);
+            setTimeout(() => {ot.innerHTML += "》释放A气体<br>"}, 2000);
+            setTimeout(() => ot.innerHTML += "》释放B气体<br>", 3000);
+            setTimeout(() => ot.innerHTML += "（在输入区输入操作就可以执行了）", 3500);
+        }
+        
+    } 
+    else if (abc === "2") {
+        let set = negy.value;
+        negy.value = "";
+        if (set == "解除铁门的电子锁"){
+            end_1() ;
+        }
+        else if (set == "释放A气体") {
+            end_2() ;
         }
         else if (set == "释放B气体"){
             abc = "3"; // 更新 abc 的值
@@ -187,23 +224,14 @@ button.addEventListener("click", () => {
                 }
                 else {
                     打字.pause()
-                    setTimeout(()=>{ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:"},1000);
-                    setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 2000);
-                    setTimeout(() => {ot.innerHTML += "》释放A气体<br>"}, 3000);
-                    setTimeout(() => ot.innerHTML += "》释放B气体<br>", 4000);
-                    
+                    选择1()
                 }
             }
             showText2(0);
         }
         else {
             ot.textContent = "命令错误!"
-            setTimeout(()=>{ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:"},1500);
-            setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 2500);
-            setTimeout(() => {ot.innerHTML += "》释放A气体<br>"}, 3500);
-            setTimeout(() => ot.innerHTML += "》释放B气体<br>", 4500);
-            
-            
+            选择1()
         }
 
     }
@@ -211,50 +239,14 @@ button.addEventListener("click", () => {
         let set = negy.value;
         negy.value = "";
         if (set == "释放A气体") {
-            abc = "end-2"; // 更新 abc 的值
-            ot.textContent = "已释放A气体"
-            气体.play()
-            keto.textContent =""
-            let text2 = "你听到了后面传来一声'滴'，你转头看去。发现后面的通风口里有红色气体在房间了蔓延，很快你失去了意识"
-            function showText5(index) {
-                打字.play();
-                打字.volume = 0.5 ;
-                if (index < text2.length) {
-                    keto.innerHTML += text2[index];
-            
-                    setTimeout(() => {
-                        showText5(index + 1);
-                    }, 100); // 设置延迟时间（毫秒）
-                }
-                else {
-                    打字.pause()                  
-                    
-                }
-            }
-            showText5(0)
-            setTimeout(() => 气体.pause() , 6500);
-            setTimeout(()=> keto.innerHTML += "<span style='color:red'>你死了!</span>", 6500)
-            setTimeout(()=> {bgm.pause()}, 6500);
-            setTimeout(()=> alert("结局-2 [嗯?这气体怎么还是草莓味的?!]"), 8000 )
-            setTimeout(()=> end.play() , 8000 )
-            setTimeout(()=> end.volume = 0.6 , 8000 )
-            setTimeout(()=> {
-                const hiddenbutton2 = document.querySelector(".隐藏")
-                hiddenbutton2.style.background = "radial-gradient(red,rgb(63, 63, 63))";
-            }, 8000 )
+            end_2() ;
         }
 
         else if (set == "释放B气体") {
             错误.play()
             错误.volume = 0.1
             ot.innerHTML = "B气体释放失败，<br>失败原因:B气体已消耗殆尽"
-            function 选择1(){
-                setTimeout(()=>{ot.innerHTML  = "你好" + nev + "!<br>你可以进行以下操作:"},1500);
-                setTimeout(() => {ot.innerHTML += "<br>》解除铁门的电子锁<br>"}, 2500);
-                setTimeout(() => {ot.innerHTML += "》释放A气体<br>"}, 3500);
-                setTimeout(() => ot.innerHTML += "》释放B气体<br>", 4500);
-            }
-            setTimeout(() => {选择1()}, 9000 )
+            setTimeout(() => {选择1()}, 8000 )
             
         }
         else if (set =="解除铁门的电子锁" ) {
