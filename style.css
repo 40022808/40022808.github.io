@@ -47,7 +47,9 @@ body {
 
 .内容_1 h2 {
     font-size: 30px;
+    margin-bottom: 0px;
 }
+
 
 .内容_1 p {
     font-size: 20px;
@@ -126,6 +128,7 @@ footer p {
     }
     .内容_1 h2 {
         font-size: 13px;
+        margin-bottom: 0px;
     }
     
     .内容_1 p {
