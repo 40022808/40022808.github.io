@@ -23,13 +23,14 @@ body {
 
 
 .内容 {
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 2vw;
     width: 96vw;
     background-color: white;
     border: solid 5px black;
     text-align: center;
+    margin-bottom: 200px;
 }
 
 .内容 h1 {
@@ -67,7 +68,7 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -79,6 +80,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 footer p {
@@ -104,7 +106,7 @@ footer p {
     }
 
     .内容 {
-        position: absolute;
+        position: relative;
         top: 100px;
         left: 10vw;
         width: 80vw;
@@ -147,7 +149,7 @@ footer p {
     }
     
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100vw;
@@ -159,6 +161,7 @@ footer p {
         justify-content: center;
         align-items: center;
         font-size: 10px;
+        margin-top: 10px;
     }
     
     footer p {
