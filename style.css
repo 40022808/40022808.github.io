@@ -125,15 +125,15 @@ footer p {
         margin-bottom: 30px;
     }
     .内容_1 h2 {
-        font-size: 20px;
+        font-size: 13px;
     }
     
     .内容_1 p {
-        font-size: 15px;
+        font-size: 12px;
     }
     
     .内容_1 p.link a {
-        font-size: 20px;
+        font-size: 15px;
         color: rgb(0, 153, 255);
         text-decoration: none;
     }
