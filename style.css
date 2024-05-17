@@ -3,303 +3,63 @@
     padding: 0;
 }
 
-
-.body {
-    background-color: black;
-    height: 1000px;
+body {
+    background-color: rgb(100, 100, 100);
 }
 
-.隐藏 {
-    display: none;
-    background-image: radial-gradient(rgb(142, 142, 142),rgb(63, 63, 63));
-    height: 1000px;
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100vw;
+    background-color: rgb(3, 0, 22);
+    background-image: url(素材库/123.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: left;
+    z-index: 5;
 }
 
 
-.开始按钮1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.标题 {
-    color: blueviolet;
-    font-size:50px;
-    position: relative;
-    top: 10vw;
-}
-
-.开始按钮 {
-    display: block;
-    font-size: 50px;
-    position: relative;
-    top: 20vw;
-    width: 400px;
-    
-}
-
-.container {
-    background-image: linear-gradient(to right, black, rgb(91, 31, 126));
-
-    height: 70px;
-}
-
-.h1 {
+.内容 {
     position: absolute;
-    left: 10px;
-    top: 0px;
-    margin-top: 0;
-    line-height: 10px;
-    background-image: url("素材库/123.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 200px;
-    height: 70px;
-    text-indent: -99999px;
+    top: 100px;
+    left: 2vw;
+    width: 96vw;
+    background-color: white;
+    border: solid 5px black;
+    text-align: center;
 }
 
-
-
-
-
-.egy {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%;
+.内容 h1 {
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
-
-.keto, .halom {
-    padding: 10px;
-    border-width: 5px;
-    border-style:solid;
-    border-color: aqua;
-    box-shadow: 15px 15px 15px black;
-    background-color: rgba(0, 255, 255, 0.171);
-    height: 500px;
-    width: 500px;
+.内容_1 {
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 30px;
 }
 
-.halom {
-    border-color: rgb(5, 31, 53);
-    background-image: url("素材库/2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-    position:relative ;
+.内容_1 h2 {
+    font-size: 30px;
 }
 
-
-
-
-.button1 {
-    margin-top: 6px;
+.内容_1 p {
     font-size: 20px;
 }
 
-.halom2 {
-    background-color: white;
-    color: black;
+.内容_1 p.link a {
+    font-size: 25px;
+    color: rgb(0, 153, 255);
+    text-decoration: none;
 }
 
-.halom3 {
-    color: black;
-    background-color: darkkhaki;
-    width: 30%;
+.内容_1 p.link a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 153, 255);
 }
-
-
-
-.negy2 {
-    color: black;
-    background-color: darkkhaki;
-    width: 30%;
-}
-
-.ot2 {
-    color: black;
-    background-color: darkkhaki;
-    width: 30%;
-}
-
-.ot {
-    background-color: white;
-    height: 40%;
-    width: 50%;
-    border-width: 1px;
-    border-style:solid;
-    border-color: black;
-}
-
-
-
-.切换 {
-    
-    position: absolute;
-    bottom: 0;
-    display: none;
-    justify-content:space-between;
-    width: 100%;
-    margin-left: -10px;
-    margin-bottom: 10px;
-}
-
-
-.左1 , .右1 {
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    opacity: 1;
-}
-
-.左 {
-    background-image: url(素材库/箭头左.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.右 {
-    background-image: url(素材库/箭头右.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-
-.左1 {
-    margin-left: 5px;
-    
-}
-
-
-
-.右1 {
-    margin-right: 5px;
-}
-
-
-
-@media screen and (max-width: 828px) {
-    .keto, .halom {
-        padding: 3px;
-        border-width: 5px;
-        border-style:solid;
-        border-color: aqua;
-        box-shadow: 10px 10px 10px black;
-        background-color: rgba(0, 255, 255, 0.171);
-        width: 60%;
-        
-        
-    }
-
-    .keto {
-        height: auto;
-    }
-
-
-    .halom {
-        margin-top: 5%;
-        background-size: cover;
-        height: 500px;
-
-    }
-
-    .egy {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-        font-size: 13px;
-    }
-
-
-    .halom3{
-        color: black;
-        background-color: darkkhaki;
-        width: 45%;
-    }
-
-
-    .ot {
-        background-color: white;
-        height: 50%;
-        width: 70%;
-        border-width: 1px;
-        border-style:solid;
-        border-color: black;
-    }
-
-
-
-    .开始按钮 {
-        display: block;
-        font-size: 30px;
-        position: relative;
-        top: 80vw;
-        width: 200px;
-        
-    }
-
-
-    .切换 {
-        position: absolute;
-        bottom: 0;
-        justify-content:space-between;
-        width: 100%;
-        margin-left: -3px;
-    }
-
-}
-
-@media screen and (min-width: 829px) and (max-width: 1224px) {
-    .keto, .halom {
-        padding: 3px;
-        border-width: 5px;
-        border-style:solid;
-        border-color: aqua;
-        box-shadow: 10px 10px 10px black;
-        background-color: rgba(0, 255, 255, 0.171);
-        width: 40%;
-        
-        
-    }
-
-    .keto {
-        height: auto;
-    }
-
-
-    .halom {
-        margin-top: 2%;
-        background-size: cover;
-    }
-
-    .egy {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-    }
-
-
-    .halom3{
-        color: black;
-        background-color: darkkhaki;
-        width: 45%;
-    }
-
-
-    .切换 {
-        
-        position: absolute;
-        bottom: 0;
-        justify-content:space-between;
-        width: 100%;
-        margin-left: -3px;
-    }
-
-
-}
-
-
