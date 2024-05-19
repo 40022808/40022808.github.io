@@ -56,13 +56,30 @@ body {
     font-size: 20px;
 }
 
-.内容_1 p.link a {
+.内容_2 {
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 30px;
+}
+
+.内容_2 h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+
+.内容_2 p {
+    font-size: 20px;
+}
+
+p.link a {
     font-size: 25px;
     color: rgb(0, 153, 255);
     text-decoration: none;
 }
 
-.内容_1 p.link a:hover {
+p.link a:hover {
     text-decoration: underline;
     text-decoration-color: rgb(0, 153, 255);
 }
@@ -137,13 +154,28 @@ footer p {
         font-size: 12px;
     }
     
-    .内容_1 p.link a {
+    .内容_2 {
+        text-align: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 30px;
+    }
+    .内容_2 h2 {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+    
+    .内容_2 p {
+        font-size: 12px;
+    }
+    
+    p.link a {
         font-size: 15px;
         color: rgb(0, 153, 255);
         text-decoration: none;
     }
     
-    .内容_1 p.link a:hover {
+    p.link a:hover {
         text-decoration: underline;
         text-decoration-color: rgb(0, 153, 255);
     }
@@ -155,7 +187,7 @@ footer p {
         width: 100vw;
         background-color: black;
         color: #B7B7B7;
-        height: 70px;
+        height: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
