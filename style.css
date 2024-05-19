@@ -167,6 +167,7 @@ footer p {
     
     .内容_2 p {
         font-size: 12px;
+        text-align: left;
     }
     
     p.link a {
