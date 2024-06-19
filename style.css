@@ -73,6 +73,23 @@ body {
     font-size: 20px;
 }
 
+.内容_3 {
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 30px;
+}
+
+.内容_3 h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+
+.内容_3 p {
+    font-size: 20px;
+}
+
 p.link a {
     font-size: 25px;
     color: rgb(0, 153, 255);
@@ -166,6 +183,23 @@ footer p {
     }
     
     .内容_2 p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+
+    .内容_3 {
+        text-align: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 30px;
+    }
+    .内容_3 h2 {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+    
+    .内容_3 p {
         font-size: 12px;
         text-align: left;
     }
