@@ -39,56 +39,23 @@ body {
     margin-bottom: 50px;
 }
 
-.内容_1 {
+.内容_内容 {
     text-align: left;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 30px;
 }
 
-.内容_1 h2 {
+.内容_内容 h2 {
     font-size: 30px;
     margin-bottom: 0px;
 }
 
 
-.内容_1 p {
+.内容_内容 p {
     font-size: 20px;
 }
 
-.内容_2 {
-    text-align: left;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 30px;
-}
-
-.内容_2 h2 {
-    font-size: 30px;
-    margin-bottom: 0px;
-}
-
-
-.内容_2 p {
-    font-size: 20px;
-}
-
-.内容_3 {
-    text-align: left;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 30px;
-}
-
-.内容_3 h2 {
-    font-size: 30px;
-    margin-bottom: 0px;
-}
-
-
-.内容_3 p {
-    font-size: 20px;
-}
 
 p.link a {
     font-size: 25px;
@@ -156,52 +123,19 @@ footer p {
         margin-bottom: 40px;
     }
 
-    .内容_1 {
+    .内容_内容 {
         text-align: left;
         margin-left: 10vw;
         margin-right: 10vw;
         margin-bottom: 30px;
     }
-    .内容_1 h2 {
+    .内容_内容 h2 {
         font-size: 13px;
         margin-bottom: 0px;
     }
     
-    .内容_1 p {
+    .内容_内容 p {
         font-size: 12px;
-    }
-    
-    .内容_2 {
-        text-align: left;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-bottom: 30px;
-    }
-    .内容_2 h2 {
-        font-size: 13px;
-        margin-bottom: 0px;
-    }
-    
-    .内容_2 p {
-        font-size: 12px;
-        text-align: left;
-    }
-
-
-    .内容_3 {
-        text-align: left;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-bottom: 30px;
-    }
-    .内容_3 h2 {
-        font-size: 13px;
-        margin-bottom: 0px;
-    }
-    
-    .内容_3 p {
-        font-size: 12px;
-        text-align: left;
     }
     
     p.link a {
